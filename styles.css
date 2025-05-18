@@ -1,0 +1,94 @@
+body {
+      margin: 0;
+      padding: 0;
+      background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #fff;
+    }
+
+    .timer-container {
+      background: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(12px);
+      padding: 40px 30px 40px 30px;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+      user-select: none;
+      width: 340px;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin: 0;
+      user-select: none;
+    }
+
+    .slogan {
+      font-size: 1.4rem;
+      font-style: italic;
+      color: #a3d2ca;
+      margin: 0;
+      user-select: none;
+    }
+
+    .button-row {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    button {
+      background: rgba(255, 255, 255, 0.15);
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      color: #fff;
+      padding: 12px 30px;
+      font-size: 1.1rem;
+      border-radius: 12px;
+      cursor: pointer;
+      box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+      backdrop-filter: blur(6px);
+      transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+      user-select: none;
+      min-width: 110px;
+      max-width: 140px;
+    }
+
+    button:hover,
+    button:focus {
+      background: rgba(255, 255, 255, 0.3);
+      border-color: #a3d2ca;
+      box-shadow: 0 0 15px 3px #a3d2ca;
+      outline: none;
+      transform: translateY(-2px);
+    }
+
+    button:active {
+      background: rgba(255, 255, 255, 0.4);
+      box-shadow: 0 0 8px 1px #6aacae;
+      transform: translateY(0);
+    }
+
+    button:disabled {
+      cursor: not-allowed;
+      opacity: 0.5;
+      box-shadow: none;
+      background: rgba(255, 255, 255, 0.1);
+      border-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .time {
+      font-size: 5rem;
+      letter-spacing: 0.1em;
+      font-family: 'Courier New', Courier, monospace;
+      margin: 0;
+      user-select: none;
+    }
+  

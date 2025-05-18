@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aesthetic Pomodoro Timer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="timer-container">
+    <h1>Pomodoro</h1>
+    <div class="slogan">Focus, Work, and Achieve More</div>
+
+    <div class="button-row">
+      <button onclick="switchToBreak()">Short Break</button>
+      <button onclick="switchToLongBreak()">Long Break</button>
+    </div>
+
+    <div class="time" id="timerDisplay">25:00</div>
+
+    <div class="button-row">
+      <button id="startBtn" onclick="startTimer()">Start</button>
+      <button onclick="resetTimer()">Reset</button>
+      <button id="stopBtn" onclick="stopTimer()">Stop</button>
+    </div>
+  </div>
+
+  <audio id="alarmSound" src="https://www.soundjay.com/buttons/sounds/beep-07.mp3" preload="auto"></audio>
+  <audio id="tickSound" src="https://www.soundjay.com/clock/sounds/clock-ticking-2.mp3" preload="auto" loop></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
